@@ -4,7 +4,7 @@ n-sliding puzzle game
 
 """
 
-class boardState:
+class BoardState:
     """
     Constructor that sets up the member variables for instantiated boardState
 
