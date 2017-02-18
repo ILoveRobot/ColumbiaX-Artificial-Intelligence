@@ -37,4 +37,18 @@ max_ram_usage: the maximum RAM usage in the lifetime of the process reported in 
 
 """
 
+import sys
 
+method = sys.argv[1]
+board = sys.argv[2]
+
+print("You chose " + method + " and " + board + " as the board")
+
+if method == "bfs":
+    print("")
+elif method == "dfs":
+    print("")
+elif method == "ast":
+    print("")
+elif method == "ida":
+    print("")
