@@ -39,12 +39,15 @@ max_ram_usage: the maximum RAM usage in the lifetime of the process reported in 
 
 import sys
 import boardState
+import Board
 
 method = sys.argv[1]
 board = sys.argv[2]
 
 startState = boardState.BoardState(None, board, [])
-print(startState.board)
+puzzleBoard = Board.Board(startState)
+
+print(puzzleBoard.board)
 
 
 if method == "bfs":
