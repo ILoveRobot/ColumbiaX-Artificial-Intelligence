@@ -39,5 +39,47 @@ class Board:
             board.append(row)
 
         return board
-        
-        
+
+    """
+    Creates a new board state that is the result of moving the
+    empty space(0) in the n-sliding puzzle
+
+    Parameters
+    ----------
+    dir: String
+        the direction to move the empty space in the puzzle
+
+    Returns
+    --------
+    String
+        the string representation of state of the board that results from moving the empty space
+    """
+    #def move(self, dir):
+
+
+    """
+    Swaps 2 tiles in the board
+
+    Parameters
+    ----------
+    t1: tuple
+        the coordinates of the 1st tile in board
+    t2: tuple
+        the coordinates of the 2nd tile in board
+
+    Returns
+    -------
+    String
+       the string representation of state of the board that results from moving the empty space        
+    """
+    #def swapTiles(a, b):
+
+    """
+    Finds the coordinates of the empty space(0) in the board
+
+    Returns
+    -------
+    tuple
+        the coordinates of the empty tile in board
+    """
+    #def findEmptyTile():
