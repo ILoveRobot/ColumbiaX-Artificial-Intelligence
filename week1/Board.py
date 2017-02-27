@@ -72,7 +72,25 @@ class Board:
     String
        the string representation of state of the board that results from moving the empty space        
     """
-    #def swapTiles(a, b):
+    def swapTiles(self, t1, t2):
+
+        board = ""
+        
+        for row in range(len(self.board)):
+            for col in range(len(self.board)):
+
+                if (row, col) == t1:
+                    board += str(self.board[t2[0]][t2[1]]) + ","
+                    continue
+                elif (row, col) == t2:
+                    board += str(self.board[t1[0]][t1[1]]) + ","
+                    continue                    
+
+                board += str(self.board[row][col]) + ","
+
+        return board[:-1]
+
+
 
     """
     Finds the coordinates of the empty space(0) in the board
