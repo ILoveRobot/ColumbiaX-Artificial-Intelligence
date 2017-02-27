@@ -82,4 +82,10 @@ class Board:
     tuple
         the coordinates of the empty tile in board
     """
-    #def findEmptyTile():
+    def findEmptyTile(self):
+
+        for row in range(len(self.board)):
+            for col in range(len(self.board)):
+                if self.board[row][col] == 0:
+                    return (row, col)
+                
